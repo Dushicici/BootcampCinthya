@@ -22,6 +22,7 @@ public class SignOutTest {
         driver.manage().window().maximize();
         driver.get("https://techblog.polteq.com/testshop/index.php");
 
+
         driver.findElement(By.className("login")).click();
         driver.findElement(By.id("email")).sendKeys("tester@test.com");
         driver.findElement(By.id("passwd")).sendKeys("1qazxsw2");
