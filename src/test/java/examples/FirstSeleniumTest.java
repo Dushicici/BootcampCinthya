@@ -25,7 +25,7 @@ public class FirstSeleniumTest extends TestShopScenario {
         WebElement el = driver.findElement(By.className("info-account"));
 
         el.getText();
-        Assertions.assertThat(el.getText()).as("welcome text").isEqualTo("Welcome to your account. Here you can " +
-                "manage all of your personal information and orders.");
+        Assertions.assertThat(el.getText()).as("welcome text").isEqualTo("Welcome to your account. Here you " +
+                "can manage all of your personal information and orders.");
     }
 }
