@@ -21,9 +21,10 @@ public class SignOutTest extends TestShopScenario {
         driver.findElement(By.id("email")).sendKeys("tester@test.com");
         driver.findElement(By.id("passwd")).sendKeys("1qazxsw2");
         driver.findElement(By.id("SubmitLogin")).click();
-        WebElement el = driver.findElement(By.className("info-account"));
 
+        WebElement el = driver.findElement(By.className("info-account"));
         el.getText();
+
         Assertions.assertThat(el.getText()).as("welcome text").isEqualTo
             ("Welcome to your account. Here you can manage all of your personal information and orders.");
 
