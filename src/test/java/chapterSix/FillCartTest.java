@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by Cinthya on 20-7-2017.
  */
-public class FillCarttest extends TestShopScenario {
+public class FillCartTest extends TestShopScenario {
 
     @Test
     public void fillCart (){
@@ -30,7 +30,7 @@ public class FillCarttest extends TestShopScenario {
         //Click on Ipod
         driver.findElement(By.cssSelector("#tags_block_left > div > a.tag_level3.first_item")).click();
 
-//        Click on Ipod shuffle
+        //Click on Ipod shuffle
         driver.findElement(By.xpath("//a[contains(text(), 'iPod shuffle')]")).click();
 
         //Click on add to cart
@@ -47,6 +47,9 @@ public class FillCarttest extends TestShopScenario {
                 getText();
         Assertions.assertThat(cardAmount).as("Quantity of Card").isEqualTo("1");
 
+        //Verify cart is empty
+        Assertions.assertThat(driver.findElement(By.className("ajax_cart_no_product")).isDisplayed()).
+                as("Text empty should be displayed").isTrue();
     }
 }
 
