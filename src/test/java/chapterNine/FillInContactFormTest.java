@@ -11,7 +11,7 @@ import pages.HomePage;
 /**
  * Created by Cinthya on 21-7-2017.
  */
-public class FillInContactFomTest extends TestShopScenario {
+public class FillInContactFormTest extends TestShopScenario {
 
     @Test
     public void fillInContactForm(){
