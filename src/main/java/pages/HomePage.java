@@ -15,6 +15,12 @@ public class HomePage {
     @FindBy(css = "#contact-link")
     private WebElement contactUsButton;
 
+    @FindBy(className = "login")
+    private WebElement logInButton;
+
+    @FindBy(className = "logout")
+    private WebElement logOutButton;
+
     public HomePage (WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -23,4 +29,19 @@ public class HomePage {
 
         contactUsButton.click();
     }
+    public void clickLogIn(){
+
+        logInButton.click();
+    }
+    public void clickLogOut(){
+
+        logOutButton.click();
+    }
+    public Boolean logInButtonDisplayed(){
+        return logInButton.isDisplayed();
+    }
+    public Boolean logoutButtonDisplayed(){
+        return logOutButton.isDisplayed();
+    }
+
 }
