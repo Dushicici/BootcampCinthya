@@ -40,7 +40,7 @@ public class FillCartTest extends TestShopScenario {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span[title='Continue shopping']")));
 
         //Continue Shopping Button
-        By.xpath("//span[contains(@title, 'Continue shopping')]").findElement(driver).click();
+        driver.findElement(By.xpath("//span[contains(@title, 'Continue shopping')]")).click();
 
         //Verify card has 1 order
         String cardAmount = driver.findElement(By.cssSelector("span.ajax_cart_quantity")).
