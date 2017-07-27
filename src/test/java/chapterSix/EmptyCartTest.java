@@ -14,7 +14,7 @@ public class EmptyCartTest extends TestShopScenario {
 
     @Test
     public void fillCart () {
-        WebDriverWait myWaitVar = new WebDriverWait((driver,20);
+        WebDriverWait myWaitVar = new WebDriverWait((driver),20);
 
         driver.findElement(By.className("login")).click();
         driver.findElement(By.id("email")).sendKeys("tester@test.com");
@@ -22,8 +22,7 @@ public class EmptyCartTest extends TestShopScenario {
         driver.findElement(By.id("SubmitLogin")).click();
 
         //Verify cart is empty if so add product to cart
-        if (Assertions.assertThat(driver.findElement(By.className("ajax_cart_no_product")).isDisplayed()).
-                as("Text empty should be displayed").isTrue()) {
+        if  (driver.findElement(By.className("ajax_cart_no_product")).isDisplayed()){
             //Click on Ipodtag
             driver.findElement(By.cssSelector("#tags_block_left > div > a.tag_level3.first_item")).click();
             //Click on Ipod shuffle
