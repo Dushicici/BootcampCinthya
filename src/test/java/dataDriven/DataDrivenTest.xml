@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name= "Suite" parallel = "none">
+<test name="dataVar1Test">
+    <parameter name="browser" value="FIREFOX"/>
+    <parameter name= "email" value="bootcamper@feelthepain.com"/>
+    <parameter name= "orderID" value="4321234"/>
+    <parameter name= "message" value="Waar zijn mijn eiwitten!"/>
+    <classes>
+        <class name="dataDriven.DataDrivenTest"/>
+    </classes>
+</test>
+    <test name="dataVar2Test">
+        <parameter name="browser" value="CHROME"/>
+        <parameter name= "email" value="bootcamper@feelthepain.com"/>
+        <parameter name= "orderID" value="4321234"/>
+        <parameter name= "message" value="Waar zijn mijn eiwitten!"/>
+        <classes>
+            <class name="dataDriven.DataDrivenTest"/>
+        </classes>
+    </test>
+    <test name="dataVar3Test">
+        <parameter name="browser" value="FIREFOX"/>
+        <parameter name= "email" value="cinthya@poulina.com"/>
+        <parameter name= "orderID" value="465982"/>
+        <parameter name= "message" value="Waar zijn mijn eiwitten!"/>
+        <classes>
+            <class name="dataDriven.DataDrivenTest"/>
+        </classes>
+    </test>
+    <test name="dataVar4Test">
+        <parameter name="browser" value="CHROME"/>
+        <parameter name= "email" value="cinthya@poulina.com"/>
+        <parameter name= "orderID" value="465982"/>
+        <parameter name= "message" value="Waar zijn mijn eiwitten!"/>
+        <classes>
+            <class name="dataDriven.DataDrivenTest"/>
+        </classes>
+    </test>
+    <test name="dataVar5Test">
+        <parameter name="browser" value="FIREFOX"/>
+        <parameter name= "email" value="cinthya.poulina@polteq.com"/>
+        <parameter name= "orderID" value="465982"/>
+        <parameter name= "message" value="Waar zijn mijn eiwitten!"/>
+        <classes>
+            <class name="dataDriven.DataDrivenTest"/>
+        </classes>
+    </test>
+    <test name="dataVar6Test">
+        <parameter name="browser" value="CHROME"/>
+        <parameter name= "email" value="cinthya.poulina@polteq.com"/>
+        <parameter name= "orderID" value="465982"/>
+        <parameter name= "message" value="Waar zijn mijn eiwitten!"/>
+        <classes>
+            <class name="dataDriven.DataDrivenTest"/>
+        </classes>
+    </test>
+</suite>
