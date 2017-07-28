@@ -27,7 +27,7 @@ public class ContactUsPage {
     @FindBy(css = "button#submitMessage")
     private WebElement sendButton;
 
-    @FindBy(xpath = ".//p[@class='alert alert-succes']")
+    @FindBy(css = "p.alert.alert-success")
     private WebElement succesMessage;
 
     @FindBy(css = ".alert.alert-danger>ol>li")
