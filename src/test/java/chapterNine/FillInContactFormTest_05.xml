@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name= "Suite" parallel = "none">
+    <test name="dataVar1Test">
+        <parameter name="browser" value="CHROME"/>
+        <parameter name= "email" value="heavylifter@feelthepain.com"/>
+        <parameter name= "orderID" value="4321234"/>
+        <parameter name= "message" value="Waar zijn mijn eiwitten"/>
+        <classes>
+            <class name="chapterNine.FillInContactFormTest_05"/>
+        </classes>
+    </test>
+    <test name="dataVar2Test">
+        <parameter name="browser" value="CHROME"/>
+        <parameter name= "email" value="hipster@tester.com"/>
+        <parameter name= "orderID" value="9876"/>
+        <parameter name= "message" value="Mn MacBook is te oud :("/>
+        <classes>
+            <class name="chapterNine.FillInContactFormTest_05"/>
+        </classes>
+    </test>
+    <test name="dataVar3Test">
+        <parameter name="browser" value="CHROME"/>
+        <parameter name= "email" value="feelfit@nopainnogain.com"/>
+        <parameter name= "orderID" value="12345"/>
+        <parameter name= "message" value="Busted my iphone will lifting bro!"/>
+        <classes>
+            <class name="chapterNine.FillInContactFormTest_05"/>
+        </classes>
+    </test>
+    <test name="dataVar4Test">
+        <parameter name="browser" value="CHROME"/>
+        <parameter name= "email" value="test@guru.com"/>
+        <parameter name= "orderID" value="666"/>
+        <parameter name= "message" value="Still waiting for my Tmap book!"/>
+        <classes>
+            <class name="chapterNine.FillInContactFormTest_05"/>
+        </classes>
+    </test>
+    <test name="dataVar5Test">
+        <parameter name="browser" value="CHROME"/>
+        <parameter name= "email" value="cross@fit.com"/>
+        <parameter name= "orderID" value="7777"/>
+        <parameter name= "message" value="Iphone 8, when!"/>
+        <classes>
+            <class name="chapterNine.FillInContactFormTest_05"/>
+        </classes>
+    </test>
+</suite>
