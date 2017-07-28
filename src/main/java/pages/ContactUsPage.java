@@ -30,7 +30,7 @@ public class ContactUsPage {
     @FindBy(xpath = ".//p[@class='alert alert-succes']")
     private WebElement succesMessage;
 
-    @FindBy(xpath = ".//p[@class='alert alert-danger']")
+    @FindBy(css = ".alert.alert-danger>ol>li")
     private WebElement notSuccesMessage;
 
 
