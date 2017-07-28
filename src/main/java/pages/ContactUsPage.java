@@ -27,10 +27,14 @@ public class ContactUsPage {
     @FindBy(css = "button#submitMessage")
     private WebElement sendButton;
 
-    @FindBy(xpath = ".//p[@class='alert alert-success']")
+    @FindBy(xpath = ".//p[@class='alert alert-succes']")
     private WebElement succesMessage;
 
-    public ContactUsPage (WebDriver driver){
+    @FindBy(xpath = ".//p[@class='alert alert-danger']")
+    private WebElement notSuccesMessage;
+
+
+        public ContactUsPage (WebDriver driver){
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
@@ -46,5 +50,8 @@ public class ContactUsPage {
     }
     public String getAlertMessage(){
         return succesMessage.getText();
+    }
+    public String getAlertNotSuccesMessage(){
+        return notSuccesMessage.getText();
     }
 }
