@@ -1,5 +1,8 @@
 package General;
 
+import browser.BrowserFactoryAdvanced;
+import browser.BrowserFactoryBasic;
+import browser.BrowserFactoryBasic;
 import io.github.bonigarcia.wdm.ChromeDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,10 +22,9 @@ public class TestShopScenario {
     @BeforeMethod
     public void setUp(){
 
-
-        ChromeDriverManager.getInstance().setup();
-        driver = new ChromeDriver();
-        wait = new WebDriverWait(driver, 10);
+        //driver = BrowserFactoryBasic.getDriver("firefox");
+        driver = BrowserFactoryAdvanced.getDriver(BrowserFactoryAdvanced.BrowserType.CHROME);
+        wait = new WebDriverWait(driver, 20);
 
         //open the website
         driver.manage().window().maximize();

@@ -23,7 +23,7 @@ public class FillInContactFormTest extends TestShopScenario {
         contactUsPage.fillInContactForm("cinthya.poulina@polteq.com", "123564",
                 "Doet het niet");
 
-        Assertions.assertThat(contactUsPage.getAlertMessage()).as("Succesmessage contact form").
+        Assertions.assertThat(contactUsPage.getAlertMessage()).as("Succes message contact form").
                 isEqualTo("Your message has been successfully sent to our team.");
     }
 }
